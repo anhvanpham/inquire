@@ -41,7 +41,7 @@ class LunarLander(Environment):
             ::optimal_trajectory_iters: The number of control samples to test.
         """
         # Instantiate the openai gym environment:
-        self.env = gym.make(name)
+        self.env = gym.make(name, render_mode = "human")
         self.seed = seed
         self.reset()
         self.optimal_trajectory_iters = optimal_trajectory_iterations
